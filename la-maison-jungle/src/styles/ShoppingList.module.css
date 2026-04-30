@@ -1,0 +1,22 @@
+.lmjPlantList {
+  background-color: pink;
+  color: white;
+  list-style-type: none;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px; /* un peu plus large */
+}
+
+.lmjPlantItem {
+  border: solid 2px black;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;  /* badge en haut, nom en bas */
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
