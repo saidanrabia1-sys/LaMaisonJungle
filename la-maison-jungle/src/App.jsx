@@ -11,12 +11,23 @@ import Cart from './components/Cart'
 
 import ShoppingList from './components/ShoppingList'
 
-function App() {
+import styles from './styles/Banner.module.css'
 
+import logo from './assets/unsplash-logo.jpg';
+
+function App() {
+    
+    const title = "Bienvenue à la maison jungle"
+    /**
+     * Lorsque j'appelle le composant <Banner>, j'y insère deux enfants <h1> et <img>.
+     * Ces enfants sont récupérer dans Banner.jsx à l'aide de propos {children}.
+     */
   return (
     <>
-    
-      <Banner />
+      <Banner>
+        <img src={logo} alt="Logo La maison jungle" className={styles.bannerLogo} />
+        <h1 className= {styles.title} >{title}</h1>
+      </Banner>
       <Cart />
       <ShoppingList />
       

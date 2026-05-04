@@ -1,22 +1,31 @@
+/* Liste principale des plantes - conteneur flex */
 .lmjPlantList {
-  background-color: pink;
-  color: white;
-  list-style-type: none;
-  padding: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  max-width: 1000px; /* un peu plus large */
+  background-color: pink;    /* Fond rose pour la liste */
+  color: black;              /* Texte blanc pour tous les enfants */
+  list-style-type: none;     /* Supprime les puces par défaut des <ul>/<li> */
+  padding: 32px;             /* Espace intérieur autour de la liste */
+  display: flex;             /* Active le mode flexbox */
+  flex-wrap: wrap;           /* Les cartes passent à la ligne si manque de place */
+  gap: 13px;                 /* Espace uniforme entre chaque carte */
+  max-width: 1000px;         /* Empêche la liste de devenir trop large */
 }
 
+/* Carte individuelle de chaque plante */
 .lmjPlantItem {
-  border: solid 2px black;
-  border-radius: 10px;
-  height: 150px;
-  width: 150px;
-  display: flex;
-  flex-direction: column;  /* badge en haut, nom en bas */
-  justify-content: space-between;
-  padding: 10px;
-  box-sizing: border-box;
+  border: solid 2px black;      /* Bordure noire autour de chaque carte */
+  border-radius: 10px;          /* Coins arrondis */
+  height: 150px;                /* Hauteur fixe de la carte */
+  width: 150px;                 /* Largeur fixe → cartes carrées */
+  display: flex;                /* Active flexbox à l'intérieur de la carte */
+  flex-direction: column;       /* Empile le contenu verticalement (badge en haut, nom en bas) */
+  justify-content: space-between; /* Répartit l'espace entre badge et nom */
+  padding: 10px;                /* Espace intérieur pour ne pas coller au bord */
+  box-sizing: border-box;       /* Le padding est inclus dans les 150x150px */
+  background-color: mistyrose;
+}
+
+.lmjSales {
+    color: rgb(118, 35, 6);
+    position: absolute;
+  
 }

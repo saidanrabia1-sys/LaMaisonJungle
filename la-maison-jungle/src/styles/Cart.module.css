@@ -5,10 +5,11 @@
     text-align: left; /* Texte aligné à gauche */
     margin-right: auto; /* Carte poussée à gauche */
     width: fit-content; /* Pour que margin-right: auto fonctionne */
-    border-radius: 13px;
+    border-radius: 10px;
 }
 .ma-liste {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
