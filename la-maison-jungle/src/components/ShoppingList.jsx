@@ -16,6 +16,10 @@ import styles from '../styles/ShoppingList.module.css'
 
 import CareScale from './CareScale'
 
+import PlantItem from './PlantItem'
+
+
+
 
 // Je crée une liste de fleurs. par la suite, j'utiliserai la liste pour renvoyer des fleurs depuis le composant ShoppingList.
 /*['monstera', 'ficus lyrata', 'pothos argenté', 'yucca', 'palmier', 'mawa fulera', 'mubwasera', 'langi langi'];*/
@@ -29,7 +33,8 @@ const plantList = [
     isBestSale: true,
     isSpecialOffer: true,
     water: 1,
-    light: 5
+    light: 5,
+    cover: monsteraImg 
     },
 
     { id: '2',
@@ -38,7 +43,8 @@ const plantList = [
     isBestSale: false,
     isSpecialOffer: false,
     water: 2,
-    light: 5
+    light: 5,
+    cover: 'https://via.placeholder.com/200x200?text=Ficus+Lyrata'
     },
 
     { 
@@ -48,7 +54,8 @@ const plantList = [
     isBestSale: true,
     isSpecialOffer: true,
     water: 3,
-    light: 4
+    light: 4,
+    cover: 'https://via.placeholder.com/200x200?text=Pothos+Argenté'
     },
 
     { 
@@ -58,7 +65,8 @@ const plantList = [
     isBestSale: false,
     isSpecialOffer: false,
     water: 1,
-    light: 5
+    light: 5,
+    cover: 'https://via.placeholder.com/200x200?text=Yucca'
     },
 
     { 
@@ -68,7 +76,8 @@ const plantList = [
     isBestSale: false,
     isSpecialOffer: false,
     water: 3,
-    light: 2
+    light: 2,
+    cover: 'https://via.placeholder.com/200x200?text=Palmier'
     },
 
     { 
@@ -78,7 +87,8 @@ const plantList = [
     isBestSale: true,
     isSpecialOffer: true,
     water: 1,
-    light: 6
+    light: 6,
+    cover: 'https://via.placeholder.com/200x200?text=Mawa+Fulera'
     },
 
     { 
@@ -88,7 +98,8 @@ const plantList = [
     isBestSale: false,
     isSpecialOffer: false,
     water: 2,
-    light: 3
+    light: 3,
+    cover: 'https://via.placeholder.com/200x200?text=Mubwasera'
     },
 
     { 
@@ -98,29 +109,29 @@ const plantList = [
     isBestSale: true,
     isSpecialOffer: true,
     water: 2,
-    light: 2
+    light: 2,
+    cover: 'https://via.placeholder.com/200x200?text=Langi+Langi'
     },
     
 ] 
     
 const ShoppingList = () => {
     return (
-        <div className={styles.plantList}>
-        <ul className={styles.lmjPlantList}>
-        {plantList.map((plant) => (
-        <li key={plant.id} className={styles.lmjPlantItem}>
-        {plant.isBestSale ? <span> ❤️ </span>: <span > 🪷 </span>
-      }
-      {plant.name}
-      {plant.isSpecialOffer ? <span className={styles.lmjSales}>solde</span> : <span></span>}
-
-      <CareScale careType="light" scaleValue={plant.light}></CareScale>
-      <CareScale careType="water" scaleValue={plant.water}></CareScale>
-    </li>
-  ))}
-</ul>
-</div>
-       
+        <div>
+            <ul className={styles.lmjPlantList}>
+                {plantList.map(({ id, name, water, light, isBestSale, cover }) => (
+                    <PlantItem
+                        key={id}
+                        id={id}
+                        name={name}
+                        water={water}
+                        light={light}
+                        isBestSale={isBestSale}
+                        cover={cover}
+                    />
+                ))}
+            </ul>
+        </div>
     )
 }
 
