@@ -11,6 +11,10 @@ import Cart from './components/Cart'
 
 import ShoppingList from './components/ShoppingList'
 
+import QuestionForm from './components/QuestionForm'
+
+import Footer from './components/Footer'
+
 import styles from './styles/Banner.module.css'
 
 import logo from './assets/unsplash-logo.jpg';
@@ -30,6 +34,8 @@ function App() {
       </Banner>
       <Cart />
       <ShoppingList />
+      <QuestionForm />
+      <Footer />
       
     </>
   )

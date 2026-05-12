@@ -10,7 +10,7 @@
  /* Nom de la plante */
 
          
-   
+import yucca from '../assets/yucca-logo.jpg'
 
 import styles from '../styles/ShoppingList.module.css'
 
@@ -18,6 +18,15 @@ import CareScale from './CareScale'
 
 import PlantItem from './PlantItem'
 
+import monsteraImg from '../assets/monstera-unsplash.jpg'
+
+import ficusLyrataImg from '../assets/ficusLyrata-logo.jpg'
+
+import pothosArgenté from '../assets/pothosArgenté-logo.jpg'
+
+import palmier from '../assets/palmier-logo.jpg'
+
+import mawaFulera from '../assets/mawaFulera-logo.jpg'
 
 
 
@@ -34,7 +43,7 @@ const plantList = [
     isSpecialOffer: true,
     water: 1,
     light: 5,
-    cover: monsteraImg 
+    cover: monsteraImg
     },
 
     { id: '2',
@@ -44,7 +53,7 @@ const plantList = [
     isSpecialOffer: false,
     water: 2,
     light: 5,
-    cover: 'https://via.placeholder.com/200x200?text=Ficus+Lyrata'
+    cover: ficusLyrataImg
     },
 
     { 
@@ -55,7 +64,7 @@ const plantList = [
     isSpecialOffer: true,
     water: 3,
     light: 4,
-    cover: 'https://via.placeholder.com/200x200?text=Pothos+Argenté'
+    cover: pothosArgenté
     },
 
     { 
@@ -66,7 +75,7 @@ const plantList = [
     isSpecialOffer: false,
     water: 1,
     light: 5,
-    cover: 'https://via.placeholder.com/200x200?text=Yucca'
+    cover: yucca
     },
 
     { 
@@ -77,7 +86,7 @@ const plantList = [
     isSpecialOffer: false,
     water: 3,
     light: 2,
-    cover: 'https://via.placeholder.com/200x200?text=Palmier'
+    cover: palmier
     },
 
     { 
@@ -88,7 +97,7 @@ const plantList = [
     isSpecialOffer: true,
     water: 1,
     light: 6,
-    cover: 'https://via.placeholder.com/200x200?text=Mawa+Fulera'
+    cover: mawaFulera
     },
 
     { 

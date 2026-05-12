@@ -1,0 +1,16 @@
+.lmjFooter {
+    color:black;
+    padding: 32px;
+    background-color: rgb(246, 152, 152);
+    border-top: solid 3px black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.lmjFooterElement {
+    margin-bottom: 10px;
+}
