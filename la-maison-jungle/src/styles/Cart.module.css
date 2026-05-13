@@ -13,3 +13,28 @@
   margin: 0;
 }
 
+.lmjCartToogleButton {
+  background-color: none;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: self-start;
+  padding: 0;
+  color: black;
+}
+
+.lmjCartClosed {
+  width: 200px;
+  padding: 3px;
+}
+
+.lmjCartClosed > button {
+  color: black;
+}
+
+.lmjCartAddButton {
+  margin-left: 32px;
+  cursor: pointer;
+  
+}
